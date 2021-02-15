@@ -1,0 +1,70 @@
+<html> 
+	<head>
+	  <link type="text/css" rel="stylesheet" href="main.css" />
+		<nav> <center>
+		<ul id="navmenu">
+			<li class="navitem"> <a href="index.html"> Home </a> </li>
+			<li class="navitem"> <a href="about.html"> About </a> </li>
+			<li class="navitem"> <a href="exercises.html"> Exercises </a> </li>
+			<li class="navitem"> <a href="competitions.html"> Competitions </a> </li>
+		</ul> </center> </nav> 
+		<br>
+	<header id="banner"> 
+		<span class="Title"> <center> Welcome to Writing World! </center> </span>
+	<script>
+		function answer(){ 
+			var radio = document.getElementsByName("trivia");
+			var selection = false;
+			var message = ""; 
+			for( var i = 0; i < radio.length; i++) {
+			  if(radio[i].value == "yes" && radio[i].checked == true) { 
+				selection = true; 
+			  } //end if statement 
+			} //end for loop
+
+			if(selection == true) {
+			  message = message + "<b><p style='color:green'>Correct!</p></b>"; 
+			 } else { 
+			  message = message + "<b><p style='color:red'>Try again.</p></b>"; 
+			}
+				document.getElementById("response").innerHTML = message;
+		} //end function answer
+	</script>
+		</header> 
+	<span class="wrap-text">
+		<p> <center>  If you <i>ever</i> need some advice or would like to practice your <b>writing skills,</b> <u>this</u> is the place to come! </center> </p> </span>
+
+	<div class="rightside"> 
+			<center> If you like to litsen to music while you write, here's a youtube video of upbeat music without lyrics. <br> <br>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/0ymcPin-4h0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </center>
+		<br>
+			<center> <a href="https://www.dictionary.com/">This website is extremely helpful when you're writing!</a> </center>
+		</div
+		<div class="leftside"> 
+			<div class="wrap-list">
+	<ol>
+		<li class="listitem">Practice writing using our writing exercises! </li>
+		<li class="listitem">Discover amazing resources to help you improve your writing!</li>
+		<li class="listitem">Compete in fun writing competions!</li>
+	</ol>
+			</div>
+<div class="wrap-trivia"> 
+	<h2> <center> Book Author Trivia Question:</h2>
+		<p> Who wrote the book 'The Giver'? </center> </p>
+		<form>
+		  <div id="response"> </div>
+			<input type="radio" name="trivia" value="yes"> Lois Lowry <br>
+			<input type="radio" name="trivia" value="no"> Suzanne Collins <br>
+			<input type="radio" name="trivia" value="no"> Stephenie Myer <br>
+			<input type="radio" name="trivia" value="no"> James Brandford <br> 
+			<input onclick="answer()" type="button" id="submit" value="Click Here To Submit">
+		</form>
+		</div 
+		<div class="clearfloat"></div>
+		</style>
+	</head> 
+	<body>  
+		
+
+		
+<br>
